@@ -4,7 +4,7 @@ import OutsideClickHandler from 'react-outside-click-handler';
 const SearchModal = (props: searchModalProps) => {
   const {title, setSearchModalShow} = props
   return(
-    <div className='position w-screen h-screen bg-black z-50'>
+    <div className='position w-screen h-screen bg-black z-50 top-0 left-0'>
       <OutsideClickHandler
         onOutsideClick={() => {
           setSearchModalShow(false)

@@ -27,7 +27,6 @@ const Header = () => {
       {
         searchModalShow && (
           <SearchModal setSearchModalShow={setSearchModalShow} title={'Search'} />
-
         )
       }
 

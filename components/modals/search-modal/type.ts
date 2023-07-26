@@ -1,4 +1,4 @@
 export interface searchModalProps {
-  title: string,
+  title?: string,
   setSearchModalShow: (x: boolean) => void;
 }

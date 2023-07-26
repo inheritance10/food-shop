@@ -18,5 +18,13 @@ html, body{
     hover:opacity-70 transition-all
 }
 
+.slick-dots{
+    @apply !flex justify-start w-full
+}
+
+.slick-dots .slick-active div {
+    @apply bg-primary w-4 h-4
+}
+
 
 

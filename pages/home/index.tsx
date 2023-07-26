@@ -1,5 +1,6 @@
 import Carousel from "@/components/Carousel";
 import Campaigns from "@/components/Campaigns";
+import MenuWrapper from "@/components/MenuWrapper";
 
 const data = [
   {
@@ -22,6 +23,9 @@ const HomePage = () => {
         {data.map((item, index) => (
           <Campaigns key={index} title={item.title} discount={item.discount} image={item.image} buttonText='Order Now' />
         ))}
+      </div>
+      <div className='h-screen'>
+        <MenuWrapper />
       </div>
 
     </div>

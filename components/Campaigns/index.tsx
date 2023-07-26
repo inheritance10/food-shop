@@ -1,6 +1,7 @@
 import Image from "next/image";
 import {CampaignsCardProps} from "@/components/Campaigns/type";
 import {BsBasketFill} from 'react-icons/Bs'
+import Title from "@/components/ui/Title";
 const Campaigns = (props: CampaignsCardProps) => {
   const {title, discount ,image , buttonText} = props
   return(
@@ -10,7 +11,7 @@ const Campaigns = (props: CampaignsCardProps) => {
       </div>
       <div className='w-full flex flex-col h-full justify-between md:items-end'>
         <div className='md:flex-col flex flex-row h-full justify-between mb-4'>
-          <h4 className='font-bold text-white md:text-xl text-3xl'>{title}</h4>
+          <Title addClass={'font-bold text-white md:text-xl text-3xl'}>{title}</Title>
           <span className='font-bold text-white md:text-xl text-3xl'>{discount}</span>
         </div>
         <button className=' gap-x-8 btn-primary flex items-center justify-between'>

@@ -24,9 +24,9 @@ const HomePage = () => {
           <Campaigns key={index} title={item.title} discount={item.discount} image={item.image} buttonText='Order Now' />
         ))}
       </div>
-      <div className='h-screen'>
+
         <MenuWrapper />
-      </div>
+
 
     </div>
   )

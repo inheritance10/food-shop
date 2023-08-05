@@ -12,7 +12,7 @@ export interface MenuItemProps {
 const MenuItem = (props: MenuItemProps) => {
   const {image, title, description, price} = props
   return (
-    <div className={'bg-secondary flex flex-col rounded-2xl mt-10'}>
+    <div className={'bg-secondary shadow-2xl flex flex-col rounded-2xl mt-10 hover:scale-105 transition-all ease-in'}>
       <div className={'w-full h-full bg-secondary'}>
         <Image src={'/images/food.png'} alt={'food'} className={'w-full rounded-bl-3xl'} width={100} height={100}/>
       </div>

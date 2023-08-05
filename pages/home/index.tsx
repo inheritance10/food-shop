@@ -1,6 +1,7 @@
 import Carousel from "@/components/Carousel";
 import Campaigns from "@/components/Campaigns";
 import MenuWrapper from "@/components/MenuWrapper";
+import About from "@/pages/about";
 
 const data = [
   {
@@ -13,20 +14,26 @@ const data = [
     discount: "30% OFF",
     image: "/images/food2.png",
   },
+  {
+    title: "Campaign 2",
+    discount: "30% OFF",
+    image: "/images/food2.png",
+  },
   // Add more data items as needed
 ];
 const HomePage = () => {
   return(
     <div>
       <Carousel />
-      <div className='md:flex-row md:flex flex flex-col mx-auto my-auto justify-between py-40 container'>
+      <div className='md:flex-row md:flex flex w-full flex-col mx-auto my-auto justify-between py-40 container flex-1 flex-wrap'>
         {data.map((item, index) => (
           <Campaigns key={index} title={item.title} discount={item.discount} image={item.image} buttonText='Order Now' />
         ))}
       </div>
 
-        <MenuWrapper />
+      <MenuWrapper />
 
+      <About />
 
     </div>
   )

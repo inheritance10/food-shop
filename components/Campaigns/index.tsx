@@ -2,6 +2,7 @@ import Image from "next/image";
 import {CampaignsCardProps} from "@/components/Campaigns/type";
 import {BsBasketFill} from 'react-icons/Bs'
 import Title from "@/components/ui/Title";
+import CustomButton from "@/components/Buttons/CustomButton";
 const Campaigns = (props: CampaignsCardProps) => {
   const {title, discount ,image , buttonText} = props
   return(
@@ -14,10 +15,9 @@ const Campaigns = (props: CampaignsCardProps) => {
           <Title addClass={'font-bold text-white md:text-xl text-3xl'}>{title}</Title>
           <span className='font-bold text-white md:text-xl text-3xl'>{discount}</span>
         </div>
-        <button className=' gap-x-8 btn-primary flex items-center justify-between'>
-          {buttonText}
-          <BsBasketFill size={25}/>
-        </button>
+          <CustomButton text={buttonText} addClass={'gap-x-8 btn-primary flex items-center justify-between'}>
+              <BsBasketFill size={25}/>
+          </CustomButton>
       </div>
     </div>
 

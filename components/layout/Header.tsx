@@ -5,6 +5,7 @@ import SearchModal from "@/components/modals/search-modal";
 import { GiHamburgerMenu, GiCancel } from "react-icons/gi";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import CustomButton from "@/components/Buttons/CustomButton";
 
 const Header = () => {
   const [isSearchModal, setIsSearchModal] = useState(false);
@@ -101,7 +102,7 @@ const Header = () => {
             />
           </button>
           <a href="#" className="md:inline-block hidden sm">
-            <button className="btn-primary">Order Online</button>
+            <CustomButton text={'Order Online'} addClass={'btn-primary'} />
           </a>
           <button
             className="sm:hidden inline-block"

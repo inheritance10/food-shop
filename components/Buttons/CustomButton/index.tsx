@@ -1,4 +1,4 @@
-const CustomButton = (props: {text: string, addClass: string, children?: any}) => {
+const CustomButton = (props: {text: string, addClass?: string, children?: any}) => {
     const {text, addClass,children} = props
     return(
         <button className={addClass}>

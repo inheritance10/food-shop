@@ -1,13 +1,10 @@
-import ProductDetail from "@/components/ProductDetail";
+
 import Header from "@/components/layout/Header";
+import ProductDetail from "@/pages/product/ProductDetail";
 
 const Product = () => {
     return (
-        <div>
-            <Header/>
             <ProductDetail/>
-        </div>
-
     )
 }
 

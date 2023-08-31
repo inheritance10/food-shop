@@ -4,11 +4,6 @@ import Campaigns from "@/components/Campaigns";
 
 export default function Home() {
   return (
-    <div>
-      <Header />
       <HomePage />
-
-
-    </div>
   )
 }

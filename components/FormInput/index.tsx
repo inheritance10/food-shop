@@ -1,13 +1,12 @@
 import React, {ChangeEvent} from 'react';
-import CustomButton from "@/components/Buttons/CustomButton";
 
 const FormInput = (props: {
     placeHolder: string;
     type: string;
     onChange: (e: ChangeEvent<HTMLInputElement>) => void;
-    name: string;
-    touched: boolean;
-    errorMessage: string;
+    name?: string;
+    touched?: boolean;
+    errorMessage?: string;
     onBlur: (e: ChangeEvent<HTMLInputElement>) => void;
 }) => {
     const {type, onChange, name, placeHolder,onBlur, errorMessage,touched} = props;

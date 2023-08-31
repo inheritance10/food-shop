@@ -12,7 +12,6 @@ const ReservationForm = () => {
         console.log(values)
     }
 
-
     const {touched,handleBlur,errors, values, handleChange, handleSubmit} = useFormik({
         initialValues: {
             fullName: '',
@@ -23,7 +22,6 @@ const ReservationForm = () => {
         onSubmit,
         validationSchema: reservationValidate
     });
-
 
 
     const input = [
@@ -73,13 +71,11 @@ const ReservationForm = () => {
                     input.map((item) => {
                         return (
                             <FormInput onBlur={handleBlur} key={item.id} {...item} onChange={handleChange}/>
-
                         )
                     })
                 }
                 <CustomButton onClick={onSubmit} type={'submit'} text={'Book Now'} addClass='btn-primary'/>
             </div>
-
         </form>
     )
 }

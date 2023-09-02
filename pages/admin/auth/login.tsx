@@ -2,7 +2,7 @@ import {useFormik} from "formik";
 import {loginValidate} from "@/validation/login";
 import React from "react";
 import CustomButton from "@/components/Buttons/CustomButton";
-import Link from "next/link";
+import { adminLoginValidate } from "@/validation/adminLogin";
 
 const Login = () => {
     const onSubmit = async (values: any) => {
@@ -15,14 +15,14 @@ const Login = () => {
             password: "",
         },
         onSubmit,
-        validationSchema: loginValidate,
+        validationSchema: adminLoginValidate,
     });
 
     return (
         <form onSubmit={handleSubmit}>
             <div className="container mx-auto h-screen">
                 <div className="flex flex-col w-full h-full justify-center items-center">
-                    <h1 className="text-4xl font-bold">Login</h1>
+                    <h1 className="text-4xl font-bold">Admin Login</h1>
 
                     <div className="flex flex-col justify-evenly w-[65%] md:w-1/3 p-2">
                         <label htmlFor="username">Username</label>
@@ -61,10 +61,6 @@ const Login = () => {
 
                     <div className='flex flex-col gap-y-3 mt-3 w-1/3'>
                         <CustomButton type="submit" text="Sign In" addClass="btn-primary w-full"/>
-                        <button className='bg-secondary w-full rounded-3xl text-white p-2'>GITHUB</button>
-                        <div className='text-center'>
-                            <Link href='/auth/register' className="text-primary">Do you no have a account?</Link>
-                        </div>
                     </div>
 
                 </div>
